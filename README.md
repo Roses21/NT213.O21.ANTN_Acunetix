@@ -13,12 +13,11 @@ Trải qua 5 bước:
 - Bước 1: Khám phá & Thu thập thông tin:
   + Acunetix tự động tạo danh sách tất cả các trang web, ứng dụng và API của bạn — và luôn cập nhật danh sách đó.
   + Thu thập dữ liệu mọi ngóc ngách trong ứng dụng của bạn:
-    ![image](https://github.com/Roses21/NT213.O21.ANTN_Group3_Acunetix/assets/147015288/edc66cc8-215d-4176-828c-d66efef64b51)
-
-- Bước 2: Phát hiện lỗ hổng:
+     ![image](https://github.com/Roses21/NT213.O21.ANTN_Group3_Acunetix/assets/147015288/edc66cc8-215d-4176-828c-d66efef64b51)
+- Bước 2: Phát hiện lỗ hổng: 
+  + Máy quét được giả lập như một hacker, tự động khởi chạy một loạt các kiểm tra lỗ hổng trên mỗi trang được tìm thấy.
   + Phát hiện hơn 7.000 lỗ hổng, bao gồm cả lỗ hổng zero-day.
   + Tìm các lỗ hổng bảo mật của bạn bằng trình quét lỗ hổng chính xác nhất thế giới.
-  + Chạy quét nhanh để phát hiện các lỗ hổng.
   + Quét nhiều môi trường cùng lúc.
   + Tăng độ bao phủ khi kết hợp quét DAST + IAST.
 - Bước 3: Giải quyết - fix nhanh các lỗ hổng:
@@ -26,7 +25,7 @@ Trải qua 5 bước:
   + Loại bỏ các thông tin sai gây lãng phí thời gian bằng bằng chứng khai thác.
   + Xác định chính xác các dòng mã cần sửa.
   + Cho phép các nhà phát triển tự giải quyết các vấn đề bảo mật.
-- Bước 4: Tích hợp với các công cụ bảo mật khác như github, jira
+- Bước 4: Tích hợp với các công cụ bảo mật khác như github, jira, Jenkins (CI).
   + Giúp các nhà phát triển dễ dàng tìm thấy, sửa chữa và ngăn chặn các lỗ hổng bằng cách tích hợp vào các công cụ họ sử dụng hàng ngày.
   + Gửi yêu cầu cho nhà phát triển chỉ bằng một cú nhấp chuột.
   + Giúp nhà phát triển viết mã an toàn hơn để ngăn chặn lỗ hổng.
@@ -44,10 +43,11 @@ Trải qua 5 bước:
   + Tệp chỉ mục (index file) được yêu cầu từ máy chủ web. Điều này được xác định bởi URL bắt đầu (ví dụ: http://www.example.com/ sẽ tải index.html). Sau khi nhận được phản hồi, DeepScan sẽ được khởi chạy, thực thi bất kỳ JavaScript nào có trên trang web. Trình thu thập thông tin kết hợp với DeepScan sẽ lần theo các liên kết, ánh xạ các trường nhập và tham số. Điều này góp phần xây dựng danh sách các thư mục và tập tin trong trang web.
   + Thu thập dữ liệu bằng AcuSensor.
 - Thực hiện phân tích bảo mật đối với cấu trúc trang web:
-  + Acunetix triển khai một số thử nghiệm bảo mật đối với trang web mục tiêu.
+  + Acunetix triển khai một số thử nghiệm bảo mật đối với trang web mục tiêu. Acunetix WVS tự động phát động các đợt tấn công đã được lập trình sẵn dựa trên các lỗ hổng, giống như khi web site bị 1 hacker tấn công thực sự, phân tích các trang và những vị trí có thể nhập liệu cùng với các sự kết hợp khác nhau của dữ liệu đầu vào có thể làm cho website hiển thị những thông tin nhạy cảm.
   + Khi Acunetix phát hiện ra các lỗ hổng, cảnh báo sẽ được báo cáo theo thời gian thực. Mỗi cảnh báo cung cấp thông tin chi tiết về lỗ hổng bảo mật, các đề xuất về cách khắc phục cũng như một số liên kết. Qua đó người dùng có thể tìm hiểu thêm về lỗ hổng được báo cáo và cách khắc phục.
-  + Nếu AcuSensor được bật, thông tin gỡ lỗi cũng sẽ được báo cáo, chẳng hạn như truy vấn SQL dễ bị tấn công bằng SQL SQL và dòng mã dễ bị tấn công chịu trách nhiệm cho việc khai thác.
-- Sau khi quá trình quét hoàn tất, kết quả quét có thể được xuất sang định dạng XML, gửi tới Trình theo dõi sự cố, xuất sang WAF để vá lỗi ảo hoặc được sử dụng để tạo nhiều loại báo cáo.
+  + Nếu AcuSensor được bật, thông tin gỡ lỗi cũng sẽ được báo cáo, chẳng hạn như truy vấn SQL dễ bị tấn công bằng SQL và dòng mã dễ bị tấn công chịu trách nhiệm cho việc khai thác.
+- Sau khi quá trình quét hoàn tất, Acunetix WVS sẽ liệt kê cấu trúc của site, phiên bản webserver đang sử dụng, URL không tồn tại, các lỗi phát hiện được cũng như mức độ Security của site đang quét. Kết quả quét có thể được xuất sang định dạng XML, gửi tới Trình theo dõi sự cố, xuất sang WAF để vá lỗi ảo hoặc được sử dụng để tạo nhiều loại báo cáo.
+![image](https://github.com/Roses21/NT213.O21.ANTN_Group3_Acunetix/assets/147015288/2bcc2fab-a450-4078-abdf-7ae834fabe07)
 ## ❤️ Ưu, nhược điểm của Acunetix
 ### 🌵 Ưu điểm
 - Acunetix triển khai một loạt các biện pháp kiểm tra lỗ hổng web đối với từng thành phần trong ứng dụng web.
@@ -60,10 +60,11 @@ Trải qua 5 bước:
 - Tồn tại dương tính giả, làm mất thời gian và công sức của nhà phát triển và nhà quản trị hệ thống trong việc kiểm tra và xác minh các kết quả quét.
 - Trong quá trình quét rất tốn RAM và bộ nhớ.
 - Không có chức năng tạm dừng quét, phải chờ đến khi quét xong.
+  ![image](https://github.com/Roses21/NT213.O21.ANTN_Group3_Acunetix/assets/147015288/2c3f310a-91fc-4b15-bb26-e28fcdad3985)
 ## ❤️ Tích hợp AcuSensor và AcuMonitor vào Acunetix 
 ### 🌵 1. AcuSensor
-- Mô tả: AcuSensor là một công nghệ độc đáo cho phép Acunetix phát hiện nhiều lỗ hổng bảo mật hơn so với phương pháp quét hộp đen truyền thống và giảm thiểu các kết quả dương tính giả.
-- Chức năng: AcuSensor được thiết kế để chèn các cảm biến vào mã nguồn của ứng dụng web, thu thập thông tin chi tiết về hoạt động của ứng dụng và chỉ ra dòng mã mà lỗ hổng được tìm thấy.
+- Mô tả: AcuSensor là một công nghệ độc đáo cho phép Acunetix phát hiện nhiều lỗ hổng bảo mật tồn tại trong mã nguồn và giảm thiểu các kết quả dương tính giả. Nó sẽ lấy danh sách tất cả các tệp có trong thư mục ứng dụng web.
+- Chức năng: AcuSensor được thiết kế để chèn các bộ thu thập (sensors) vào mã nguồn của ứng dụng web, thu thập thông tin chi tiết về hoạt động của ứng dụng và chỉ ra dòng mã mà lỗ hổng được tìm thấy.
 - Tính năng: AcuSensor kết hợp các kỹ thuật quét hộp đen với phân tích mã tương tác trong khi mã nguồn đang được thực thi để tăng độ chính xác của việc phát hiện lỗ hổng bảo mật.
 ### 🌵 2. AcuMonitor
 - Mô tả: AcuMonitor là một dịch vụ trung gian được tích hợp vào Acunetix để phát hiện các lỗ hổng bảo mật chỉ có thể được xác định thông qua một dịch vụ bên ngoài.
@@ -88,7 +89,21 @@ Trải qua 5 bước:
 ### 🌵 6. Tấn công Session Fixation:
 - Kịch bản tấn công: Kẻ tấn công cố ý thiết lập hoặc đoán đúng giá trị phiên người dùng để chiếm quyền truy cập vào tài khoản của họ.
 - Cơ chế bảo mật: Sử dụng phiên ngắn hạn và cơ chế tái tạo phiên sau khi người dùng xác thực. Hãy cẩn thận khi sử dụng cookie phiên để tránh lỗ hổng liên quan đến CSRF.
+## ❤️ Scan results sections
+Ví dụ: scan trang web: http://testphp.vulnweb.com/ - Trang web thử nghiệm Acunetix WVS.
+- Scan page cung cấp danh sách tất cả các lần quét được thực hiện, bao gồm loại quét (scan profile), ngày và giờ quét được thực hiện (Schedule), số lượng lỗ hổng được tìm thấy cho từng mức độ nghiêm trọng và trạng thái hiện tại của từng lỗ hổng. Trong trường hợp nhiều lần quét theo cách thủ công, mỗi kết quả quét sẽ được hiển thị riêng lẻ. Tuy nhiên, nếu thiết lập lịch trình, chỉ hiển thị kết quả quét gần đây nhất.
+  ![image](https://github.com/Roses21/NT213.O21.ANTN_Group3_Acunetix/assets/147015288/d12ba04c-8e8e-4163-a37c-61923b28b46f)
+- Scan information: Phần này cung cấp xếp hạng mức độ đe dọa tổng thể cho URL mục tiêu dựa trên số lượng và mức độ nghiêm trọng của các lỗ hổng được máy quét phát hiện:
+  ![image](https://github.com/Roses21/NT213.O21.ANTN_Group3_Acunetix/assets/147015288/f2018e1f-4902-474c-8410-10d7fdfc90eb)
+- Vulnerabilities: Đây là danh sách các lỗ hổng được phát hiện, sắp xếp theo mức độ nghiêm trọng. Bạn có thể lọc thông tin theo độ tin cậy, mức độ nghiêm trọng, trạng thái và loại lỗ hổng (confidence, severity, status, and vulnerability type). Nhấp vào lỗ hổng từ danh sách để xem tất cả thông tin về việc phát hiện và thay đổi trạng thái lỗ hổng.
+  ![image](https://github.com/Roses21/NT213.O21.ANTN_Group3_Acunetix/assets/147015288/6653e33d-0e53-46ef-97f1-d81c2d7595f7)
+- Site Structure: Sử dụng phần này để kiểm tra xem quá trình quét đã bao phủ tất cả các trang web của mục tiêu chưa và để xác định các lỗ hổng ảnh hưởng đến một tệp hoặc thư mục cụ thể. Bấm vào một thư mục để mở rộng cây cấu trúc trang web, nhấp vào lỗ hổng để hiển thị thêm thông tin.
+  ![image](https://github.com/Roses21/NT213.O21.ANTN_Group3_Acunetix/assets/147015288/70900b5c-b13e-4509-8a5a-156818625f3e)
+- Events: Danh sách các sự kiện liên quan đến quá trình quét. Phần này hiển thị thời điểm bắt đầu và hoàn tất quá trình quét cũng như liệu có gặp phải bất kỳ lỗi nào trong quá trình quét hay không.
+  ![image](https://github.com/Roses21/NT213.O21.ANTN_Group3_Acunetix/assets/147015288/926f7eb2-8015-42ab-9655-6952bba1e2df)
+- Có 4 mức độ nguy hại: high, medium, low và information.
 ## ❤️ Nguồn tham khảo
 - https://tapchinganhang.gov.vn/kiem-tra-va-phat-hien-lo-hong-bao-mat-website-voi-acunetix.htm
 - https://www.acunetix.com/support/docs/wvs/overview/
-- https://viblo.asia/p/gioi-thieu-cong-cu-do-quet-lo-hong-acunetix-ORNZqjDbl0n 
+- https://viblo.asia/p/gioi-thieu-cong-cu-do-quet-lo-hong-acunetix-ORNZqjDbl0n
+- https://github.com/securi3ytalent/acunetix-13-kali-linux 
