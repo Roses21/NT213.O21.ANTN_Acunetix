@@ -71,9 +71,14 @@ Trải qua 5 bước:
 - Chức năng: AcuMonitor cho phép Acunetix phát hiện các lỗ hổng bảo mật mà không cần trực tiếp truy cập vào ứng dụng web đích. Nó có thể báo cáo các lỗ hổng ngay lập tức trong quá trình quét hoặc thông báo qua email sau khi quét kết thúc.
 - Tính năng: AcuMonitor là một dịch vụ hoàn toàn tích hợp vào Acunetix và được kích hoạt cho tất cả các mục tiêu được cấu hình trong Acunetix, giúp cải thiện khả năng phát hiện lỗ hổng bảo mật của công cụ.
 ## ❤️ 6 kịch bản tấn công/xâm nhập (phức tạp) và cơ chế bảo mật để ngăn chặn tấn công tương ứng
-### 🌵 1. Tấn công Blind SQL Injection:
-- Kịch bản tấn công: Kẻ tấn công thực hiện các cuộc tấn công SQL Injection mà không nhận được kết quả trực tiếp từ cơ sở dữ liệu, điều này làm cho việc phát hiện lỗ hổng trở nên khó khăn hơn.
-- Cơ chế bảo mật: Sử dụng cơ chế bảo vệ như thực thi SQL ngầm (blind SQL execution) để kiểm tra các lỗ hổng này. Kiểm tra việc sử dụng câu lệnh tham số hóa (prepared statements) và hạn chế quyền truy cập của người dùng đến cơ sở dữ liệu.
+### 🌵 1. Tấn công Broken Access Control:
+- Thông tin chung: Đây là lỗ hổng A1 trong TOP 10 OWASP 2021, liên quan đến các CWE, như CWE-200: Tiết lộ thông tin nhạy cảm cho tác nhân trái phép, CWE-201: Chèn thông tin nhạy cảm vào dữ liệu đã gửi và CWE-352: Giả mạo yêu cầu trên nhiều trang web. Lỗ hổng này cho phép attacker thực hiện những hành vi nằm ngoài quyền được phép của họ. Lỗi thường dẫn đến việc tiết lộ, sửa đổi hoặc phá hủy trái phép tất cả dữ liệu hoặc thực hiện chức năng kinh doanh ngoài giới hạn của người dùng.
+- Kịch bản tấn công: Xây dựng 1 website đơn giản, không kiểm soát quyền hạn của account users. Do đó, users sẽ truy cập được những file nằm ngoài quyền hạn của mình. Ví dụ như truy cập được page admin.php.
+- Cơ chế bảo mật:
+  + Chỉ cho phép truy cập tài nguyên public.
+  + Sử dụng các cơ chế kiểm soát truy cập chung cho toàn bộ ứng dụng để đảm bảo tính nhất quán và bảo mật. Hạn chế việc sử dụng CORS để giảm thiểu các nguy cơ bảo mật.
+  + Ghi lại các sự cố khi người dùng không thành công trong việc truy cập và cảnh báo cho quản trị viên nếu phát hiện các hành vi bất thường hoặc lặp lại.
+  + Giới hạn tốc độ cho các yêu cầu API và điều khiển để ngăn chặn các cuộc tấn công tự động gây hại.
 ### 🌵 2. Tấn công Cross-Site Scripting (XSS):
 - Kịch bản tấn công: Kẻ tấn công chèn mã JavaScript độc hại vào các trang web hoặc tin nhắn để chiếm quyền điều khiển trình duyệt của người dùng.
 - Cơ chế bảo mật: Sử dụng phần mở rộng cắt HTML (HTML escaping) hoặc thư viện mã nguồn mở để loại bỏ các ký tự đặc biệt và mã JavaScript từ dữ liệu nhập liệu trước khi hiển thị trên trình duyệt.
