@@ -1,4 +1,4 @@
-## ❤️ Acunetix là gì?
+![image](https://github.com/Roses21/NT213.O21.ANTN_Group3_Acunetix/assets/147015288/6b64f57a-8dff-4144-baa0-6512c73dc078)## ❤️ Acunetix là gì?
 - Acunetix Web Vulnerbility Scanner là một công cụ kiểm tra bảo mật ứng dụng web để tìm kiếm lỗ hổng bảo mật như SQL Injection, hay Cross-Site Scripting (XSS),...
 - Mục tiêu là một trang web, ứng dụng web, máy chủ hoặc thiết bị mạng mà bạn muốn quét để tìm lỗ hổng bảo mật.
 - Acunetix có một bộ kỹ thuật phát hiện lỗ hổng Website hàng đầu hiện nay cùng với Acunetix AcuSensor giúp thực hiện các cuộc tấn công tự động và hiển thị các lỗ hổng được phát hiện. Đó cũng là một công nghệ bảo mật có thể tìm thấy lỗ hổng nhanh với số lượng cảnh báo giả thấp. Điều này cũng cho thấy, lỗ hổng trong mã nguồn và báo cáo thông tin gỡ lỗi hiệu quả, đồng thời xác định được các lỗ hổng Website như: File inclusion, CRLF, Code execution, Directory Traversal, lỗ hổng khi xác thực...
@@ -107,6 +107,49 @@ Ví dụ: scan trang web: http://testphp.vulnweb.com/ - Trang web thử nghiệm
 - Events: Danh sách các sự kiện liên quan đến quá trình quét. Phần này hiển thị thời điểm bắt đầu và hoàn tất quá trình quét cũng như liệu có gặp phải bất kỳ lỗi nào trong quá trình quét hay không.
   ![image](https://github.com/Roses21/NT213.O21.ANTN_Group3_Acunetix/assets/147015288/926f7eb2-8015-42ab-9655-6952bba1e2df)
 - Có 4 mức độ nguy hại: high, medium, low và information.
+## ❤️ Đọc hiểu các giá trị trên tool Acunetix
+### 1. Dashboard
+![image](https://github.com/Roses21/NT213.O21.ANTN_Group3_Acunetix/assets/147015288/8aaad02a-7d9f-4b2c-8342-995e9bacb424)
+- Trên cùng của trang web là các hình tròn thể hiện ổng số lỗ hổng chưa được vá và chia theo mức độ nghiêm trọng. Bao gồm 4 mức độ: High, Medium, Low,
+- Tổng số Scans đang chạy, chờ chạy, và đã hoàn thành.
+- Tổng số Targets đã quét.
+- Top 5 mục tiêu dễ bị tổn thương nhất.
+- Top 5 lỗ hổng được báo cáo nhiều nhất.
+- Biểu đồ xu hướng hiển thị xu hướng hàng tháng trong 12 tháng qua đối với:
+![image](https://github.com/Roses21/NT213.O21.ANTN_Group3_Acunetix/assets/147015288/c14591ec-2717-4dae-8209-6546ebb478d0)
+  + Số lượng Open Vulnerabilities.
+  + Số ngày trung bình để khắc phục lỗ hổng.
+  + Số lượng lỗ hổng được tìm thấy.
+  + Thời gian trung bình mà lỗ hổng này tồn tại.
+### 2. Targets
+![image](https://github.com/Roses21/NT213.O21.ANTN_Group3_Acunetix/assets/147015288/8ed23d57-cece-4ef1-9fec-15b6ce3017b7)
+- Mục tiêu mà Acunetix scan là một trang web, ứng dụng web, máy chủ hoặc thiết bị mạng mà bạn muốn quét để tìm lỗ hổng bảo mật. Bạn có thể định cấu hình Mục tiêu một lần và quét chúng thường xuyên nếu cần. Acunetix theo dõi trạng thái bảo mật của từng mục tiêu bằng cách tổng hợp và theo dõi các lỗ hổng được xác định cho từng mục tiêu.
+- Acunetix hỗ trợ 3 loại scans với: Target (chỉ 1 address), Targets (nhiều address), Targets Group (gom nhóm các mục tiêu lại để quản lý dễ dàng hơn, xem chi tiết tại https://www.acunetix.com/support/docs/target-groups/).
+- Cấu hình để scan:
+  + Business Criticality: Bạn có thể chỉ định một trong 4 mức độ Low, Normal, High, Critical; nhãn mặc định là Normal. Chức năng này sẽ cho phép bạn lọc các bản quét và các lỗ hổng dựa trên tiêu chí này, giúp bạn tập trung vào các mục quan trọng hơn trong kho web của mình nếu cần thiết.
+  + Scan Speed: Mục tiêu của bạn có thể bị ảnh hưởng xấu khi bạn cố gắng quét với tốc độ cao hoặc cường độ cao (nhiều yêu cầu đồng thời) hoặc có thể kích hoạt các cơ chế phòng thủ làm vô hiệu hóa kết quả quét của bạn. Bạn có thể điều chỉnh tốc độ quét theo bất kỳ tùy chọn nào sau đây:
+    - Fast (mặc định): 10 yêu cầu đồng thời, không giới hạn tốc độ.
+    - Moderate: 5 yêu cầu đồng thời, gửi yêu cầu mỗi 250 mili giây.
+    - Slow: 2 yêu cầu đồng thời, gửi yêu cầu mỗi 250 mili giây.
+    - Slower: 1 yêu cầu đồng thời, không giới hạn tốc độ.
+  + Site Login: Phần này chứa các tùy chọn để cho phép Acunetix quét các khu vực bị hạn chế trong ứng dụng web. Điều này có thể đạt được bằng cách cung cấp tên người dùng và mật khẩu để Acunetix tự động đăng nhập vào các khu vực hạn chế của ứng dụng web hoặc thông qua việc sử dụng trình tự đăng nhập được ghi trước hoặc cơ chế xác thực OAuth2.
+  + AcuSensor: Acunetix AcuSensor tăng độ chính xác của quá trình quét Acunetix bằng cách cải thiện khả năng thu thập thông tin, phát hiện và báo cáo các lỗ hổng trong khi giảm kết quả dương tính giả. AcuSensor có thể được sử dụng trên các ứng dụng web .NET (bao gồm .NET core), JAVA, PHP và Node.js. AcuSensor cần được triển khai trên ứng dụng web mục tiêu của bạn.
+  + Crawling (quét cào): phát hiện các điểm dễ bị tổn thương trong ứng dụng web trong giai đoạn Tấn công.
+    - Limit Crawling to Address: hữu ích để giới hạn phạm vi quét ở một phần của ứng dụng web.
+  + HTTP: Authentication, Client Certificate, Proxy Server.
+### 3. Vulnerabilities
+![image](https://github.com/Roses21/NT213.O21.ANTN_Group3_Acunetix/assets/147015288/174419b4-5fb4-45b1-9d58-5fdd961e28c2)
+  - Cung cấp khái niệm tổng quan, ảnh hưởng của lỗ hổng đến hệ thống và cách fix lỗ hổng.
+  - Phân loại CWE, CVSS (The Common Vulnerability Scoring System).
+  - Cung cấp các trang web tài liệu tham khảo.
+### 4. Scans
+- Cung cấp danh sách tất cả các lần quét được thực hiện, bao gồm loại quét (Scan Profile), ngày và giờ quét được thực hiện (Lịch trình), số lượng lỗ hổng được tìm thấy cho từng mức độ nghiêm trọng và trạng thái hiện tại của từng lỗ hổng.:
+![image](https://github.com/Roses21/NT213.O21.ANTN_Group3_Acunetix/assets/147015288/ccd1cdc4-82eb-4afd-b094-887bab1b0680)
+
+- Click chọn 1 Target để xem kết quả scan chi tiết:
+  + Scan Information:
+![image](https://github.com/Roses21/NT213.O21.ANTN_Group3_Acunetix/assets/147015288/4792cedb-ce75-4852-80a3-99b21748e1df)
+    - 
 ## ❤️ Nguồn tham khảo
 - https://tapchinganhang.gov.vn/kiem-tra-va-phat-hien-lo-hong-bao-mat-website-voi-acunetix.htm
 - https://www.acunetix.com/support/docs/wvs/overview/
