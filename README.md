@@ -1,5 +1,5 @@
 ## Mục lục
-- [Acunetix là gì?](https://github.com/Roses21/NT213.O21.ANTN_Group3_Acunetix/main/README.md/acunetix-là-gì)
+- [Acunetix là gì?](https://github.com/Roses21/NT213.O21.ANTN_Group3_Acunetix/blob/main/README.md/#acunetix-là-gì)
 - [Các chức năng chính](https://github.com/Roses21/NT213.O21.ANTN_Group3_Acunetix/edit/main/README.md#%EF%B8%8F-c%C3%A1c-ch%E1%BB%A9c-n%C4%83ng-ch%C3%ADnh-c%E1%BB%A7a-acunetix)
 - [Các bước Acunetix thực hiện](https://github.com/Roses21/NT213.O21.ANTN_Group3_Acunetix/edit/main/README.md#%EF%B8%8F-c%C3%A1c-b%C6%B0%E1%BB%9Bc-ch%C3%ADnh-acunetix-th%E1%BB%B1c-hi%E1%BB%87n)
 - [Acunetix tự động quét và phát hiện lỗ hổng](https://github.com/Roses21/NT213.O21.ANTN_Group3_Acunetix/edit/main/README.md#%EF%B8%8F-acunetix-th%E1%BB%B1c-hi%E1%BB%87n-qu%C3%A9t-t%E1%BB%B1-%C4%91%E1%BB%99ng-v%C3%A0-ph%C3%A1t-hi%E1%BB%87n-l%E1%BB%97-h%E1%BB%95ng-nh%C6%B0-th%E1%BA%BF-n%C3%A0o)
