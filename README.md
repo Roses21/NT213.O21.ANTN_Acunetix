@@ -6,7 +6,7 @@
 - [Ưu và nhược điểm của Acunetix](https://github.com/Roses21/NT213.O21.ANTN_Group3_Acunetix?tab=readme-ov-file#%EF%B8%8F-%C6%B0u-nh%C6%B0%E1%BB%A3c-%C4%91i%E1%BB%83m-c%E1%BB%A7a-acunetix)
 - [AcuSensor và AcuMonitor](https://github.com/Roses21/NT213.O21.ANTN_Group3_Acunetix?tab=readme-ov-file#%EF%B8%8F-t%C3%ADch-h%E1%BB%A3p-acusensor-v%C3%A0-acumonitor-v%C3%A0o-acunetix)
 - [Đọc hiểu tool và kết quả scan](https://github.com/Roses21/NT213.O21.ANTN_Group3_Acunetix?tab=readme-ov-file#%EF%B8%8F-%C4%91%E1%BB%8Dc-hi%E1%BB%83u-c%C3%A1c-gi%C3%A1-tr%E1%BB%8B-tr%C3%AAn-tool-acunetix)
-- [Demo](https://github.com/Roses21/NT213.O21.ANTN_Group3_Acunetix?tab=readme-ov-file#%EF%B8%8F-demo)
+- [Hosting web đơn giản để test tool]()
 - [Nguồn tham khảo](https://github.com/Roses21/NT213.O21.ANTN_Group3_Acunetix?tab=readme-ov-file#%EF%B8%8F-ngu%E1%BB%93n-tham-kh%E1%BA%A3o)
 
 ## ❤️ Acunetix là gì?
@@ -83,13 +83,6 @@ Trải qua 5 bước:
 - Tính năng: AcuMonitor là một dịch vụ hoàn toàn tích hợp vào Acunetix và được kích hoạt cho tất cả các mục tiêu được cấu hình trong Acunetix, giúp cải thiện khả năng phát hiện lỗ hổng bảo mật của công cụ.
 ## ❤️ 6 kịch bản tấn công/xâm nhập (phức tạp) và cơ chế bảo mật để ngăn chặn tấn công tương ứng
 ### 🌵 1. Tấn công Broken Access Control:
-- Thông tin chung: Đây là lỗ hổng A1 trong TOP 10 OWASP 2021, liên quan đến các CWE, như CWE-200: Tiết lộ thông tin nhạy cảm cho tác nhân trái phép, CWE-201: Chèn thông tin nhạy cảm vào dữ liệu đã gửi và CWE-352: Giả mạo yêu cầu trên nhiều trang web. Lỗ hổng này cho phép attacker thực hiện những hành vi nằm ngoài quyền được phép của họ. Lỗi thường dẫn đến việc tiết lộ, sửa đổi hoặc phá hủy trái phép tất cả dữ liệu hoặc thực hiện chức năng kinh doanh ngoài giới hạn của người dùng.
-- Kịch bản tấn công: Xây dựng 1 website đơn giản, không kiểm soát quyền hạn của account users. Do đó, users sẽ truy cập được những file nằm ngoài quyền hạn của mình. Ví dụ như truy cập được page admin.php.
-- Cơ chế bảo mật:
-  + Chỉ cho phép truy cập tài nguyên public.
-  + Sử dụng các cơ chế kiểm soát truy cập chung cho toàn bộ ứng dụng để đảm bảo tính nhất quán và bảo mật. Hạn chế việc sử dụng CORS để giảm thiểu các nguy cơ bảo mật.
-  + Ghi lại các sự cố khi người dùng không thành công trong việc truy cập và cảnh báo cho quản trị viên nếu phát hiện các hành vi bất thường hoặc lặp lại.
-  + Giới hạn tốc độ cho các yêu cầu API và điều khiển để ngăn chặn các cuộc tấn công tự động gây hại.
 ### 🌵 2. Tấn công Cross-Site Scripting (XSS):
 - Kịch bản tấn công: Kẻ tấn công chèn mã JavaScript độc hại vào các trang web hoặc tin nhắn để chiếm quyền điều khiển trình duyệt của người dùng.
 - Cơ chế bảo mật: Sử dụng phần mở rộng cắt HTML (HTML escaping) hoặc thư viện mã nguồn mở để loại bỏ các ký tự đặc biệt và mã JavaScript từ dữ liệu nhập liệu trước khi hiển thị trên trình duyệt.
@@ -148,12 +141,30 @@ Trải qua 5 bước:
   + Scan Information:
 ![image](https://github.com/Roses21/NT213.O21.ANTN_Group3_Acunetix/assets/147015288/4792cedb-ce75-4852-80a3-99b21748e1df)
 
-## ❤️ Demo
+## ❤️ Hosting web đơn giản để test tool
 
 Phần này nhóm tôi sẽ triển khai website, chứa 6 lỗ hổng chính tương đương với 6 kịch bản. Sau đó dùng Acunetix để scan và xem cách Acunetix báo cáo lỗ hổng như thế nào!
+### 0. Hosting trang web bằng Byethost:
+- Các bạn có thể truy cập https://byet.host/free-hosting để đăng ký tài khoản và domain name.
+- Xác nhận, check mail để lấy thông tin username/password được đính kèm trong email. Sau đó đăng nhập vào VistaPanel - đây là trang quản lý website.
+
+  ![image](https://github.com/Roses21/NT213.O21.ANTN_Group3_Acunetix/assets/147015288/97be5954-08b0-4d17-bbe9-9044cef23147)
+
+- Tại đây, mở Online File Manager, vào htdocs và upload các file php cần thiết.
+
+  ![image](https://github.com/Roses21/NT213.O21.ANTN_Group3_Acunetix/assets/147015288/60ba1a8e-0127-4d4c-9b78-c44bbbe5448d)
+
+- Trong Database management chọn MySQL Database để bắt đầu tạo database.
 
 ### 1. Kịch bản 1: A5:2017-Broken Access Control
-
+- Thông tin chung: Đây là lỗ hổng A1 trong TOP 10 OWASP 2021, liên quan đến các CWE, như CWE-200: Tiết lộ thông tin nhạy cảm cho tác nhân trái phép, CWE-201: Chèn thông tin nhạy cảm vào dữ liệu đã gửi và CWE-352: Giả mạo yêu cầu trên nhiều trang web. Lỗ hổng này cho phép attacker thực hiện những hành vi nằm ngoài quyền được phép của họ. Lỗi thường dẫn đến việc tiết lộ, sửa đổi hoặc phá hủy trái phép tất cả dữ liệu hoặc thực hiện chức năng kinh doanh ngoài giới hạn của người dùng.
+- Kịch bản tấn công: Xây dựng 1 website đơn giản, không kiểm soát quyền hạn của account users. Do đó, users sẽ truy cập được những file nằm ngoài quyền hạn của mình. Ví dụ như truy cập được page admin.php.
+- Cơ chế bảo mật:
+  + Chỉ cho phép truy cập tài nguyên public.
+  + Sử dụng các cơ chế kiểm soát truy cập chung cho toàn bộ ứng dụng để đảm bảo tính nhất quán và bảo mật. Hạn chế việc sử dụng CORS để giảm thiểu các nguy cơ bảo mật.
+  + Ghi lại các sự cố khi người dùng không thành công trong việc truy cập và cảnh báo cho quản trị viên nếu phát hiện các hành vi bất thường hoặc lặp lại.
+  + Giới hạn tốc độ cho các yêu cầu API và điều khiển để ngăn chặn các cuộc tấn công tự động gây hại.
+  
 ## ❤️ Nguồn tham khảo
 - https://tapchinganhang.gov.vn/kiem-tra-va-phat-hien-lo-hong-bao-mat-website-voi-acunetix.htm
 - https://www.acunetix.com/support/docs/wvs/overview/
