@@ -1,4 +1,15 @@
-![image](https://github.com/Roses21/NT213.O21.ANTN_Group3_Acunetix/assets/147015288/6b64f57a-8dff-4144-baa0-6512c73dc078)## ❤️ Acunetix là gì?
+## Mục lục
+- [Acunetix là gì?](https://github.com/Roses21/NT213.O21.ANTN_Group3_Acunetix/edit/main/README.md#%EF%B8%8F-acunetix-l%C3%A0-g%C3%AC)
+- [Các chức năng chính](https://github.com/Roses21/NT213.O21.ANTN_Group3_Acunetix/edit/main/README.md#%EF%B8%8F-c%C3%A1c-ch%E1%BB%A9c-n%C4%83ng-ch%C3%ADnh-c%E1%BB%A7a-acunetix)
+- [Các bước Acunetix thực hiện](https://github.com/Roses21/NT213.O21.ANTN_Group3_Acunetix/edit/main/README.md#%EF%B8%8F-c%C3%A1c-b%C6%B0%E1%BB%9Bc-ch%C3%ADnh-acunetix-th%E1%BB%B1c-hi%E1%BB%87n)
+- [Acunetix tự động quét và phát hiện lỗ hổng](https://github.com/Roses21/NT213.O21.ANTN_Group3_Acunetix/edit/main/README.md#%EF%B8%8F-acunetix-th%E1%BB%B1c-hi%E1%BB%87n-qu%C3%A9t-t%E1%BB%B1-%C4%91%E1%BB%99ng-v%C3%A0-ph%C3%A1t-hi%E1%BB%87n-l%E1%BB%97-h%E1%BB%95ng-nh%C6%B0-th%E1%BA%BF-n%C3%A0o)
+- [Ưu và nhược điểm của Acunetix](https://github.com/Roses21/NT213.O21.ANTN_Group3_Acunetix/edit/main/README.md#%EF%B8%8F-%C6%B0u-nh%C6%B0%E1%BB%A3c-%C4%91i%E1%BB%83m-c%E1%BB%A7a-acunetix)
+- [AcuSensor và AcuMonitor](https://github.com/Roses21/NT213.O21.ANTN_Group3_Acunetix/edit/main/README.md#%EF%B8%8F-%C6%B0u-nh%C6%B0%E1%BB%A3c-%C4%91i%E1%BB%83m-c%E1%BB%A7a-acunetix)
+- [Đọc hiểu tool và kết quả scan](https://github.com/Roses21/NT213.O21.ANTN_Group3_Acunetix/edit/main/README.md#%EF%B8%8F-%C4%91%E1%BB%8Dc-hi%E1%BB%83u-c%C3%A1c-gi%C3%A1-tr%E1%BB%8B-tr%C3%AAn-tool-acunetix)
+- [Demo](https://github.com/Roses21/NT213.O21.ANTN_Group3_Acunetix/edit/main/README.md#%EF%B8%8F-demo)
+- [Nguồn tham khảo](https://github.com/Roses21/NT213.O21.ANTN_Group3_Acunetix/edit/main/README.md#%EF%B8%8F-ngu%E1%BB%93n-tham-kh%E1%BA%A3o)
+
+## ❤️ Acunetix là gì?
 - Acunetix Web Vulnerbility Scanner là một công cụ kiểm tra bảo mật ứng dụng web để tìm kiếm lỗ hổng bảo mật như SQL Injection, hay Cross-Site Scripting (XSS),...
 - Mục tiêu là một trang web, ứng dụng web, máy chủ hoặc thiết bị mạng mà bạn muốn quét để tìm lỗ hổng bảo mật.
 - Acunetix có một bộ kỹ thuật phát hiện lỗ hổng Website hàng đầu hiện nay cùng với Acunetix AcuSensor giúp thực hiện các cuộc tấn công tự động và hiển thị các lỗ hổng được phát hiện. Đó cũng là một công nghệ bảo mật có thể tìm thấy lỗ hổng nhanh với số lượng cảnh báo giả thấp. Điều này cũng cho thấy, lỗ hổng trong mã nguồn và báo cáo thông tin gỡ lỗi hiệu quả, đồng thời xác định được các lỗ hổng Website như: File inclusion, CRLF, Code execution, Directory Traversal, lỗ hổng khi xác thực...
@@ -94,19 +105,6 @@ Trải qua 5 bước:
 ### 🌵 6. Tấn công Session Fixation:
 - Kịch bản tấn công: Kẻ tấn công cố ý thiết lập hoặc đoán đúng giá trị phiên người dùng để chiếm quyền truy cập vào tài khoản của họ.
 - Cơ chế bảo mật: Sử dụng phiên ngắn hạn và cơ chế tái tạo phiên sau khi người dùng xác thực. Hãy cẩn thận khi sử dụng cookie phiên để tránh lỗ hổng liên quan đến CSRF.
-## ❤️ Scan results sections
-Ví dụ: scan trang web: http://testphp.vulnweb.com/ - Trang web thử nghiệm Acunetix WVS.
-- Scan page cung cấp danh sách tất cả các lần quét được thực hiện, bao gồm loại quét (scan profile), ngày và giờ quét được thực hiện (Schedule), số lượng lỗ hổng được tìm thấy cho từng mức độ nghiêm trọng và trạng thái hiện tại của từng lỗ hổng. Trong trường hợp nhiều lần quét theo cách thủ công, mỗi kết quả quét sẽ được hiển thị riêng lẻ. Tuy nhiên, nếu thiết lập lịch trình, chỉ hiển thị kết quả quét gần đây nhất.
-  ![image](https://github.com/Roses21/NT213.O21.ANTN_Group3_Acunetix/assets/147015288/d12ba04c-8e8e-4163-a37c-61923b28b46f)
-- Scan information: Phần này cung cấp xếp hạng mức độ đe dọa tổng thể cho URL mục tiêu dựa trên số lượng và mức độ nghiêm trọng của các lỗ hổng được máy quét phát hiện:
-  ![image](https://github.com/Roses21/NT213.O21.ANTN_Group3_Acunetix/assets/147015288/f2018e1f-4902-474c-8410-10d7fdfc90eb)
-- Vulnerabilities: Đây là danh sách các lỗ hổng được phát hiện, sắp xếp theo mức độ nghiêm trọng. Bạn có thể lọc thông tin theo độ tin cậy, mức độ nghiêm trọng, trạng thái và loại lỗ hổng (confidence, severity, status, and vulnerability type). Nhấp vào lỗ hổng từ danh sách để xem tất cả thông tin về việc phát hiện và thay đổi trạng thái lỗ hổng.
-  ![image](https://github.com/Roses21/NT213.O21.ANTN_Group3_Acunetix/assets/147015288/6653e33d-0e53-46ef-97f1-d81c2d7595f7)
-- Site Structure: Sử dụng phần này để kiểm tra xem quá trình quét đã bao phủ tất cả các trang web của mục tiêu chưa và để xác định các lỗ hổng ảnh hưởng đến một tệp hoặc thư mục cụ thể. Bấm vào một thư mục để mở rộng cây cấu trúc trang web, nhấp vào lỗ hổng để hiển thị thêm thông tin.
-  ![image](https://github.com/Roses21/NT213.O21.ANTN_Group3_Acunetix/assets/147015288/70900b5c-b13e-4509-8a5a-156818625f3e)
-- Events: Danh sách các sự kiện liên quan đến quá trình quét. Phần này hiển thị thời điểm bắt đầu và hoàn tất quá trình quét cũng như liệu có gặp phải bất kỳ lỗi nào trong quá trình quét hay không.
-  ![image](https://github.com/Roses21/NT213.O21.ANTN_Group3_Acunetix/assets/147015288/926f7eb2-8015-42ab-9655-6952bba1e2df)
-- Có 4 mức độ nguy hại: high, medium, low và information.
 ## ❤️ Đọc hiểu các giá trị trên tool Acunetix
 ### 1. Dashboard
 ![image](https://github.com/Roses21/NT213.O21.ANTN_Group3_Acunetix/assets/147015288/8aaad02a-7d9f-4b2c-8342-995e9bacb424)
@@ -149,7 +147,13 @@ Ví dụ: scan trang web: http://testphp.vulnweb.com/ - Trang web thử nghiệm
 - Click chọn 1 Target để xem kết quả scan chi tiết:
   + Scan Information:
 ![image](https://github.com/Roses21/NT213.O21.ANTN_Group3_Acunetix/assets/147015288/4792cedb-ce75-4852-80a3-99b21748e1df)
-    - 
+
+## ❤️ Demo
+
+Phần này nhóm tôi sẽ triển khai website, chứa 6 lỗ hổng chính tương đương với 6 kịch bản. Sau đó dùng Acunetix để scan và xem cách Acunetix báo cáo lỗ hổng như thế nào!
+
+### 1. Kịch bản 1: A5:2017-Broken Access Control
+
 ## ❤️ Nguồn tham khảo
 - https://tapchinganhang.gov.vn/kiem-tra-va-phat-hien-lo-hong-bao-mat-website-voi-acunetix.htm
 - https://www.acunetix.com/support/docs/wvs/overview/
