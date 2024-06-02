@@ -1,0 +1,33 @@
+/htdocs
+  ├── css
+  │   ├── bootstrap4-neon-glow.css
+  │   ├── bootstrap4-neon-glow.min.css
+  │   ├── flipclock.css
+  │   ├── particles.css
+  │   └── style.css
+  ├── js
+  │   ├── app.js
+  │   ├── flipclock.min.js
+  │   └── particles.js
+  ├── index.php
+  ├── login.php
+  ├── logout.php
+  ├── README.md
+  └── vulnerabilities
+      ├── broken_access_control.php
+      ├── security_misconfiguration.php
+      ├── DOM_XSS.php
+      └── admin.php
+
+1. Download xampp:
+https://www.apachefriends.org/download.html
+
+2. If you use Kali Linux, you can use Apache in xampp to deploy your local website:
+sudo /opt/lampp/lampp start
+Restart: sudo /opt/lampp/lampp start
+Stop: 	 sudo /opt/lampp/lampp stop
+
+3. Open Firefox, text "localhost" and automatically into your website kekeke.
+
+4. Notice: Source off website have to save in /opt/lampp/htdocs folder. To update, delete or create, you have to be root.
+
