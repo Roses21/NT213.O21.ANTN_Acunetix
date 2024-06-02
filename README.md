@@ -1,13 +1,13 @@
 ## Mục lục
 - [Acunetix là gì?](https://github.com/Roses21/NT213.O21.ANTN_Group3_Acunetix/blob/main/README.md/#%EF%B8%8F-acunetix-l%C3%A0-g%C3%AC)
-- [Các chức năng chính](https://github.com/Roses21/NT213.O21.ANTN_Group3_Acunetix/edit/main/README.md#%EF%B8%8F-c%C3%A1c-ch%E1%BB%A9c-n%C4%83ng-ch%C3%ADnh-c%E1%BB%A7a-acunetix)
-- [Các bước Acunetix thực hiện](https://github.com/Roses21/NT213.O21.ANTN_Group3_Acunetix/edit/main/README.md#%EF%B8%8F-c%C3%A1c-b%C6%B0%E1%BB%9Bc-ch%C3%ADnh-acunetix-th%E1%BB%B1c-hi%E1%BB%87n)
-- [Acunetix tự động quét và phát hiện lỗ hổng](https://github.com/Roses21/NT213.O21.ANTN_Group3_Acunetix/edit/main/README.md#%EF%B8%8F-acunetix-th%E1%BB%B1c-hi%E1%BB%87n-qu%C3%A9t-t%E1%BB%B1-%C4%91%E1%BB%99ng-v%C3%A0-ph%C3%A1t-hi%E1%BB%87n-l%E1%BB%97-h%E1%BB%95ng-nh%C6%B0-th%E1%BA%BF-n%C3%A0o)
-- [Ưu và nhược điểm của Acunetix](https://github.com/Roses21/NT213.O21.ANTN_Group3_Acunetix/edit/main/README.md#%EF%B8%8F-%C6%B0u-nh%C6%B0%E1%BB%A3c-%C4%91i%E1%BB%83m-c%E1%BB%A7a-acunetix)
-- [AcuSensor và AcuMonitor](https://github.com/Roses21/NT213.O21.ANTN_Group3_Acunetix/edit/main/README.md#%EF%B8%8F-%C6%B0u-nh%C6%B0%E1%BB%A3c-%C4%91i%E1%BB%83m-c%E1%BB%A7a-acunetix)
-- [Đọc hiểu tool và kết quả scan](https://github.com/Roses21/NT213.O21.ANTN_Group3_Acunetix/edit/main/README.md#%EF%B8%8F-%C4%91%E1%BB%8Dc-hi%E1%BB%83u-c%C3%A1c-gi%C3%A1-tr%E1%BB%8B-tr%C3%AAn-tool-acunetix)
-- [Demo](https://github.com/Roses21/NT213.O21.ANTN_Group3_Acunetix/edit/main/README.md#%EF%B8%8F-demo)
-- [Nguồn tham khảo](https://github.com/Roses21/NT213.O21.ANTN_Group3_Acunetix/edit/main/README.md#%EF%B8%8F-ngu%E1%BB%93n-tham-kh%E1%BA%A3o)
+- [Các chức năng chính](https://github.com/Roses21/NT213.O21.ANTN_Group3_Acunetix?tab=readme-ov-file#%EF%B8%8F-c%C3%A1c-ch%E1%BB%A9c-n%C4%83ng-ch%C3%ADnh-c%E1%BB%A7a-acunetix)
+- [Các bước Acunetix thực hiện](https://github.com/Roses21/NT213.O21.ANTN_Group3_Acunetix?tab=readme-ov-file#%EF%B8%8F-c%C3%A1c-b%C6%B0%E1%BB%9Bc-ch%C3%ADnh-acunetix-th%E1%BB%B1c-hi%E1%BB%87n)
+- [Acunetix tự động quét và phát hiện lỗ hổng](https://github.com/Roses21/NT213.O21.ANTN_Group3_Acunetix?tab=readme-ov-file#%EF%B8%8F-acunetix-th%E1%BB%B1c-hi%E1%BB%87n-qu%C3%A9t-t%E1%BB%B1-%C4%91%E1%BB%99ng-v%C3%A0-ph%C3%A1t-hi%E1%BB%87n-l%E1%BB%97-h%E1%BB%95ng-nh%C6%B0-th%E1%BA%BF-n%C3%A0o)
+- [Ưu và nhược điểm của Acunetix](https://github.com/Roses21/NT213.O21.ANTN_Group3_Acunetix?tab=readme-ov-file#%EF%B8%8F-%C6%B0u-nh%C6%B0%E1%BB%A3c-%C4%91i%E1%BB%83m-c%E1%BB%A7a-acunetix)
+- [AcuSensor và AcuMonitor](https://github.com/Roses21/NT213.O21.ANTN_Group3_Acunetix?tab=readme-ov-file#%EF%B8%8F-t%C3%ADch-h%E1%BB%A3p-acusensor-v%C3%A0-acumonitor-v%C3%A0o-acunetix)
+- [Đọc hiểu tool và kết quả scan](https://github.com/Roses21/NT213.O21.ANTN_Group3_Acunetix?tab=readme-ov-file#%EF%B8%8F-%C4%91%E1%BB%8Dc-hi%E1%BB%83u-c%C3%A1c-gi%C3%A1-tr%E1%BB%8B-tr%C3%AAn-tool-acunetix)
+- [Demo](https://github.com/Roses21/NT213.O21.ANTN_Group3_Acunetix?tab=readme-ov-file#%EF%B8%8F-demo)
+- [Nguồn tham khảo](https://github.com/Roses21/NT213.O21.ANTN_Group3_Acunetix?tab=readme-ov-file#%EF%B8%8F-ngu%E1%BB%93n-tham-kh%E1%BA%A3o)
 
 ## ❤️ Acunetix là gì?
 - Acunetix Web Vulnerbility Scanner là một công cụ kiểm tra bảo mật ứng dụng web để tìm kiếm lỗ hổng bảo mật như SQL Injection, hay Cross-Site Scripting (XSS),...
