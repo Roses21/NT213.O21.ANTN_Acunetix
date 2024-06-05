@@ -101,7 +101,7 @@ Trải qua 5 bước:
 ## ❤️ Đọc hiểu các giá trị trên tool Acunetix
 ### 1. Dashboard
 ![image](https://github.com/Roses21/NT213.O21.ANTN_Group3_Acunetix/assets/147015288/8aaad02a-7d9f-4b2c-8342-995e9bacb424)
-- Trên cùng của trang web là các hình tròn thể hiện ổng số lỗ hổng chưa được vá và chia theo mức độ nghiêm trọng. Bao gồm 4 mức độ: High, Medium, Low,
+- Trên cùng của trang web là các hình tròn thể hiện ổng số lỗ hổng chưa được vá và chia theo mức độ nghiêm trọng. Bao gồm 4 mức độ: High, Medium, Low, Normal.
 - Tổng số Scans đang chạy, chờ chạy, và đã hoàn thành.
 - Tổng số Targets đã quét.
 - Top 5 mục tiêu dễ bị tổn thương nhất.
